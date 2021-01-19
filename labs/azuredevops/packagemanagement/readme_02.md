@@ -41,7 +41,7 @@
 
     ![](images/006.png)
 
-1. Close and Reopen the other Visual Studio instance used for cloning the PartsUnlimited repository ( <a href="../prereq/"> prerequisites </a> Task 2), so that it shows this new source.
+1. Close and Reopen the other Visual Studio instance used for cloning the PartsUnlimited repository, so that it shows this new source.
 
 <a name="Ex1Task2"></a>
 ### Task 2: Creating and publishing a NuGet package ###
