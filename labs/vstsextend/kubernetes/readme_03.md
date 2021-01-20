@@ -8,7 +8,7 @@ The following azure resources need to be configured for this lab:
 |![AKS](images/aks.png) AKS | Docker images are deployed to Pods running inside AKS|
 |![Azure SQL Server](images/sqlserver.png) Azure SQL Server | SQL Server on Azure to host database|
 
-1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page. Launch the [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) from the Azure portal and choose **Bash**. Click on Show advanced settings enter unique name for Storage account and File share then Create storage. 
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page. Launch the **Azure Cloud Shell** from the Azure portal by clicking on **Cloud Shell** icon on the top right corner and choose **Bash**. Click on Show advanced settings enter unique name for Storage account and File share then Create storage. 
 
     ![Iimage.](https://raw.githubusercontent.com/CloudLabs-MOC/azuredevopslabs/az400-badri/labs/vstsextend/kubernetes/images/bash1.png) 
 
