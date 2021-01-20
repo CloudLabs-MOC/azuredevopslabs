@@ -1,6 +1,6 @@
 ## Exercise 1: Configure Build and Release pipeline
 
-Make sure that you have created the AKS project in your Azure DevOps organization through [Azure DevOps Demo Generator](http://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77372&Name=AKS) (as mentioned in pre-requisites). We will manually map Azure resources such as AKS and Azure Container Registry to the build and release definitions.
+1. Copy the DevOps link from the Lab Environment output page to navigate to your AKS project on Azure DevOps.
 
 1. Navigate to **Pipelines --> Pipelines**. 
    
@@ -10,15 +10,9 @@ Make sure that you have created the AKS project in your Azure DevOps organizatio
    
    ![build](images/editbuild.png)
 
-1. In **Run services** task, select your Azure subscription from **Azure subscription** dropdown. Click **Authorize**.
+1. In **Run services** task, select your Azure subscription from **Azure subscription** dropdown. Click **Advanced Options** from the drop-down next to Authorize button. In the pop-up window select the Resource Group provided from the drop-drop options.
 
    ![azureendpoint](images/endpoint.png)
-
-   You will be prompted to authorize this connection with Azure credentials. Disable pop-up blocker in your browser if you see a blank screen after clicking the OK button, and please retry the step.
-
-   This creates an **Azure Resource Manager Service Endpoint**, which defines and secures a connection to a Microsoft Azure subscription, using Service Principal Authentication (SPA). This endpoint will be used to connect **Azure DevOps** and **Azure**.
-
-   - Note: If your subscription is not listed or to specify an existing service principal, follow the [Service Principal creation](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=vsts) instructions.
 
 1. Following the successful authentication, select appropriate values from the dropdown - **Azure subscription** and **Azure Container Registry** as shown. 
 
