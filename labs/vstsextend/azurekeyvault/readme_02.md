@@ -9,7 +9,7 @@ In this lab, you will see how you can use Azure Key Vault in a pipeline.
 
 Next, we will create a key vault in Azure. For this lab scenario, we have a node app that connects to a MySQL database where we will store the password for the MySQL database as a secret in the key vault.
 
-1. If not already logged in, login to the [Azure Portal](https://portal.azure.com).
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page.
 
 1. Enter "Key vault" in the search field and press enter. Select **Key Vaults** under services.
 

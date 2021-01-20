@@ -2,7 +2,7 @@
 
 In this task, you will configure a CI pipeline that will build and push the image to Azure Container Registry.
 
-1. Open the <a href="https://portal.azure.com" target="_blank">Azure Portal</a>.
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page.
 
 1. Select **+ Create a resource** and search for **Container Registry**. Select **Create**. In the *Create Container Registry* dialog, enter a name for the service, select the resource group, location and click **Review + Create**. Once the validation is success click **Create**.
 
