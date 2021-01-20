@@ -33,10 +33,10 @@ The following azure resources need to be configured for this lab:
 1. **Deploy Azure Container Registry(ACR)**: Run the below command to create your own private container registry using Azure Container Registry (ACR).
 
     ```bash
-    az acr create --resource-group akshandsonlab --name <unique-acr-name> --sku Standard --location <region>
+    az acr create --resource-group <rg-name> --name <unique-acr-name> --sku Standard --location <region>
     ```
     
-   - Note: Enter a unique ACR name. ACR name may contain alpha numeric characters only and must be between 5 and 50 characters"
+   - Note: Enter the name of the provided resource group. Enter a unique ACR name. ACR name may contain alpha numeric characters only and must be between 5 and 50 characters"
     
 1. **Grant ACR access to AKS** : Authorize the AKS cluster to connect to the Azure Container Registry using below command 
 
@@ -48,16 +48,16 @@ The following azure resources need to be configured for this lab:
     Create an Azure SQL server.
     
     ```bash
-    az sql server create -l <region> -g akshandsonlab -n <unique-sqlserver-name> -u sqladmin -p P2ssw0rd1234
+    az sql server create -l <region> -g <rg-name> -n <unique-sqlserver-name> -u sqladmin -p P2ssw0rd1234
     ```
 
     Create a database
 
     ```bash
-    az sql db create -g akshandsonlab -s <unique-sqlserver-name> -n mhcdb --service-objective S0
+    az sql db create -g <rg-name> -s <unique-sqlserver-name> -n mhcdb --service-objective S0
     ```
     
-   - Note: Enter a unique SQL server name. Since the Azure SQL Server name does not support **UPPER** / **Camel** casing naming conventions, use lowercase for the ***SQL Server Name*** field value.
+   - Note: Enter the name of the provided resource group. Enter a unique SQL server name. Since the Azure SQL Server name does not support **UPPER** / **Camel** casing naming conventions, use lowercase for the ***SQL Server Name*** field value.
     
 1. The following components - **Container Registry**, **Kubernetes Service**, **SQL Server** along with **SQL Database** are deployed. Access each of these components individually and make a note of the details which will be used in Exercise 1.
    
