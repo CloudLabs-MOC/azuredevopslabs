@@ -22,7 +22,11 @@ Azure Pipelines app on Microsoft Teams enables you to monitor the events for you
 
 1. Use the `@azure pipelines` handle to start interacting with the app.
 
-1. In Conversations enter `@Azure Pipelines signin`.
+1. In Conversations enter 
+
+   ```
+   @Azure Pipelines signin
+   ```
 
     ![](images/azurepipelines_signin.png)
 
@@ -38,13 +42,17 @@ Azure Pipelines app on Microsoft Teams enables you to monitor the events for you
 
 To start monitoring a pipeline, use the following command inside a channel:
 
-`@azure pipelines subscribe [pipeline url]`
+```
+@azure pipelines subscribe [pipeline url]
+```
 
 The pipeline URL can be to any page within your pipeline that has a *definitionId* or *buildId/releaseId* present in the URL.
 
 1. For example, to subscribe for Build pipelines enter
   
-   `@azure pipelines subscribe https://dev.azure.com/myorg/Tailwind%20Traders/_build?definitionId=2`
+   ```
+   @azure pipelines subscribe https://dev.azure.com/myorg/Tailwind%20Traders/_build?definitionId=2
+   ```
  
    ![](images/azurepipelines_build.png)
 
@@ -52,7 +60,9 @@ The pipeline URL can be to any page within your pipeline that has a *definitionI
 
 1. To subscribe for Release pipelines enter
 
-   `@azure pipelines subscribe https://dev.azure.com/myorg/Tailwind%20Traders/_releaseDefinition?definitionId=2`
+   ```
+   @azure pipelines subscribe https://dev.azure.com/myorg/Tailwind%20Traders/_releaseDefinition?definitionId=2
+   ```
    
    ![](images/azurepipelines_release.png)
 
@@ -60,8 +70,11 @@ The pipeline URL can be to any page within your pipeline that has a *definitionI
 
 1. **Managing Subscriptions**: You can add or remove subscriptions by using the following command
 
-     `@azure pipelines subscriptions`
-This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
+   ```
+   @azure pipelines subscriptions
+   ```
+   
+   This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
     
     ![](images/azurepipelines_managesub.png)
 
@@ -70,7 +83,11 @@ This command lists all of the current subscriptions for the channel and allows y
 ### Using filters to customize subscriptions
 When a user subscribes to any pipeline, a few subscriptions are created by default without any filters being applied. Often, users have the need to customize these subscriptions. For example, users may want to get notified only when builds fail or when deployments are pushed to a production environment. The Azure Pipelines app supports filters to customize what you see on your channel.
 
-Run the `@Azure Pipelines subscriptions` command and select **Add Subscription**.
+Run the following command and select **Add Subscription**.
+
+   ```
+   @Azure Pipelines subscriptions
+   ```
 
    ![](images/azurepipelines_managesub.png)
 

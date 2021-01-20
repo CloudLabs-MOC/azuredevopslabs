@@ -3,7 +3,11 @@
 <a name="Ex1Task1"></a>
 ### Task 1: Create a SonarCloud account ### 
 
- 1. Create a SonarCloud account from [https://sonarcloud.io](https://sonarcloud.io/) and login to SonarCloud with Azure DevOps. 
+ 1. Create a SonarCloud account by navigating to the link below and login to SonarCloud with Azure DevOps.
+    
+    ```
+    https://sonarcloud.io/
+    ```
 
     ![Iimage.](https://raw.githubusercontent.com/CloudLabs-MOC/azuredevopslabs/az400-badri/labs/azuredevops/sonarcloud/images/login.png) 
 
@@ -112,7 +116,11 @@
 
     ![](images/015.png)
 
-1. Navigate to [https://sonarcloud.io](https://sonarcloud.io/) and sign in to your SonarCloud account.
+1. Navigate to the link below and sign in to your SonarCloud account.
+
+    ```
+    https://sonarcloud.io/
+    ```
 
 1. Click "My account link" and move to "Security" tab
 

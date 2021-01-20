@@ -20,21 +20,31 @@ In this exercise, let us trigger a build manually and upon completion, an automa
 
     ![release_summary1](images/release_summary1.png)
 
-1. Once the release is complete, launch the [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) and run the below commands to see the pods running in AKS:
+1. Once the release is complete, launch the Azure Cloud Shell in Azure Portal and run the below commands to see the pods running in AKS:
 
-    1. Type **`az aks get-credentials --resource-group yourResourceGroup --name yourAKSname`** in the command prompt to get the access credentials for the Kubernetes cluster. Replace the variables `yourResourceGroup` and `yourAKSname` with the actual values.
+    1. Type the following command  in the command prompt to get the access credentials for the Kubernetes cluster. Replace the variables `yourResourceGroup` and `yourAKSname` with the actual values.
+       
+       ```
+       az aks get-credentials --resource-group yourResourceGroup --name yourAKSname
+       ```
 
-         ![Kubernetes Service Endpoint](images/getkubeconfig.png)
+       ![Kubernetes Service Endpoint](images/getkubeconfig.png)
 
-    1. **`kubectl get pods`**
+    1. Enter the following command
+    
+       ```
+       kubectl get pods
+       ```
 
-        ![getpods](images/getpods.png)
+       ![getpods](images/getpods.png)
 
         The deployed web application is running in the displayed pods.
 
 1. To access the application, run the below command. If you see that **External-IP** is pending, wait for sometime until an IP is assigned.
 
-    **`kubectl get service mhc-front --watch`**
+   ```
+   kubectl get service mhc-front --watch
+   ```
 
     ![watchfront](images/watchfront.png)
 

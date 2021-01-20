@@ -1,8 +1,6 @@
 ## Exercise 2: Deploying to an Azure Web App for containers
 
-In this exercise, we will setup a Release pipeline to deploy the web application to an Azure web app. First,let's create a Web App for Container with MYSQL.
-
-1. Navigate back to your [Azure Portal](https://portal.azure.com).
+In this exercise, we will setup a Release pipeline to deploy the web application to an Azure web app. First, let's create a Web App for Container with MYSQL.
 
 1. In the Azure Portal, choose **+ Create a resource**, search for **Web App**, select and click *Create*.
 
@@ -10,7 +8,7 @@ In this exercise, we will setup a Release pipeline to deploy the web application
 
     * Enter a name for the new web app
     * Choose the Azure subscription 
-    * Select existing or create new resource group for the web app. 
+    * Select the provided resource group for the web app. 
     * Leave the App Service plan/Location as it is.
 
       ![](images/azurewebappcreate1.png)
@@ -86,5 +84,10 @@ In this exercise, we will setup a Release pipeline to deploy the web application
 
 1. Check the artifact version you want to use and then select **Create**.
 
-1. Wait for the release is complete and then navigate to the URL `http://{your web app name}.azurewebsites.net/myshuttledev`. You should be able to see the login page.
+1. Wait for the release is complete and then navigate to the URL. You should be able to see the login page.
+
+   ```
+   http://{your web app name}.azurewebsites.net/myshuttledev
+   ```
+   
 

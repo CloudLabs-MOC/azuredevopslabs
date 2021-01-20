@@ -19,13 +19,13 @@ You will use a Windows Container on Azure Container Instances (ACI) to bring up 
 3. Run the following command to Create windows ACI and push the Nerd Dinner image from ACR.
 
    ```csharp
-   az container create --name nerddinnerapp --resource-group nerddinnerapp --os-type windows --image {your acr name}.azurecr.io/nerddinner:{Image Tag} --ip-address public
+   az container create --name nerddinnerapp --resource-group {rg name} --os-type windows --image {your acr name}.azurecr.io/nerddinner:{Image Tag} --ip-address public
    ```
 
    ![deployaci](images/deployaci.png)
 
    When prompted for **image registry password** paste the password which you had copied in the previous exercise
-   > Replace **your acr name** and **Image tag** with your resources details
+   > Replace **rg name** with name of the resource group provided to you and **your acr name** and **Image tag** with your resources details
 
    It would take approximately 5-10 minutes to deploy ACI.
 

@@ -51,7 +51,7 @@ Next, we will create a key vault in Azure. For this lab scenario, we have a node
 
 Now, lets go to the Azure DevOps project that you provisioned using the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?name=keyvault) and configure the Azure Pipelines to read the secret from the key vault.
 
-1. Navigate to the Azure DevOps project.
+1. Copy the DevOps link from the Lab Environment output page to navigate to your Keyvault project on Azure DevOps.
 
     ![](images/project.png)
 
@@ -73,9 +73,9 @@ Now, lets go to the Azure DevOps project that you provisioned using the [Azure D
    Fill the information from previously created service principal:
 
     -  Subscription Id and name: Subscription Id can be found in the Lab Environment output page and Name can be found in the keyvault resource overview page.
-    -  Service Principal Id = AppId can be found in the Lab Environment output page
-    -  Service Principal key = Password can be found in the Lab Environment output page
-    -  TenantId , can be found in the Lab Environment output page.
+    -  Service Principal Id: Application Id can be found in the Lab Environment output page
+    -  Service Principal key: Secret Key can be found in the Lab Environment output page
+    -  TenantId: Tenant Id can be found in the Lab Environment output page.
 
     Click on **Verify** to check it works, give the connection a name and click **Verify and Save**.
 
