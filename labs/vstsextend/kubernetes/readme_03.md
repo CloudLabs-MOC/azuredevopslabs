@@ -8,7 +8,7 @@ The following azure resources need to be configured for this lab:
 |![AKS](images/aks.png) AKS | Docker images are deployed to Pods running inside AKS|
 |![Azure SQL Server](images/sqlserver.png) Azure SQL Server | SQL Server on Azure to host database|
 
-1. Launch the [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) from the Azure portal and choose **Bash**. Click on Show advanced settings enter unique name for Storage account and File share then Create storage. 
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page. Launch the [Azure Cloud Shell](https://docs.microsoft.com/en-in/azure/cloud-shell/overview) from the Azure portal and choose **Bash**. Click on Show advanced settings enter unique name for Storage account and File share then Create storage. 
 
     ![Iimage.](https://raw.githubusercontent.com/CloudLabs-MOC/azuredevopslabs/az400-badri/labs/vstsextend/kubernetes/images/bash1.png) 
 
@@ -16,7 +16,7 @@ The following azure resources need to be configured for this lab:
 
 1. **Deploy Kubernetes to Azure, using CLI**:
 
-   i. Get the latest available Kubernetes version in your preferred region into a bash variable. Replace `<region>` with the region of your choosing, for example eastus.
+   i. Get the latest available Kubernetes version in your region into a bash variable. Replace `<region>` with the same region as the resource group provided, for example eastus.
 
       ```bash
      version=$(az aks get-versions -l <region> --query 'orchestrators[-1].orchestratorVersion' -o tsv)
@@ -25,10 +25,10 @@ The following azure resources need to be configured for this lab:
    ii. Create AKS using the latest version available
     
     ```bash
-    az aks create --resource-group akshandsonlab --name <unique-aks-cluster-name> --kubernetes-version $version --generate-ssh-keys --location <region>
+    az aks create --resource-group <rg-name> --name <unique-aks-cluster-name> --kubernetes-version $version --generate-ssh-keys --location <region>
     ```
     
-   - Note: Enter a unique AKS cluster name. AKS name must contain between 3 and 31 characters inclusive. The name can contain only letters, numbers, and hyphens. The name must start with a letter and must end with a letter or a number. The AKS deployment may take 10-15 minutes
+   - Note: Enter the name of the provided resource group. Enter a unique AKS cluster name. AKS name must contain between 3 and 31 characters inclusive. The name can contain only letters, numbers, and hyphens. The name must start with a letter and must end with a letter or a number. The AKS deployment may take 10-15 minutes
 
 1. **Deploy Azure Container Registry(ACR)**: Run the below command to create your own private container registry using Azure Container Registry (ACR).
 
