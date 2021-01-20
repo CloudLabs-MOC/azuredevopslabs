@@ -2,7 +2,7 @@
 
 In this exercise, you will create a SQL Azure instance and migrate the application LocalDB to SQL Server in Azure.
 
-1. Click on the Azure Portal icon on the VM and login with the Azure Credentials from the Lab Environment output page. Once you have logged in create a resource and search for **Azure SQL**, click on create and follow the steps below. 
+1. Click on the Azure Portal icon on the VM desktop and login with the Azure credentials from the Lab Environment output page. Once you have logged in create a resource and search for **Azure SQL**, click on create and follow the steps below. 
 
 1. Under **SQL databases**, leave **Resource type** set to **Single database**, and select **Create**. 
 
