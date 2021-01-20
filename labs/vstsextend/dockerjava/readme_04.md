@@ -5,7 +5,7 @@
 1. Add a new MySQL connection string with **MyShuttleDb** as the name and the following string
 
    ```
-   jdbc:mysql://**{MySQL Server Name}**.mysql.database.azure.com:3306/alm?useSSL=true&requireSSL=false&autoReconnect=true&user=**{your user name}**@**{MySQL Server Name}**&password=**{your password}**
+   jdbc:mysql://{MySQL Server Name}.mysql.database.azure.com:3306/alm?useSSL=true&requireSSL=false&autoReconnect=true&user={your user name}@{MySQL Server Name}&password={your password}
    ```
    
    Replace the following with values that you have noted down
