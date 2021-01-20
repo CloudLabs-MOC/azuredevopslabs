@@ -49,8 +49,6 @@ Next, we will create a key vault in Azure. For this lab scenario, we have a node
 
 ### Task 2: Check the Azure Pipeline
 
-Now, lets go to the Azure DevOps project that you provisioned using the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?name=keyvault) and configure the Azure Pipelines to read the secret from the key vault.
-
 1. Copy the DevOps link from the Lab Environment output page to navigate to your Keyvault project on Azure DevOps.
 
     ![](images/project.png)
